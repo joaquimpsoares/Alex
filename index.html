@@ -6,47 +6,111 @@
     <title>Información de Alumno</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
+            animation: fadeIn 1.5s ease;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
         .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
         .header img {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
+
+        h1 {
+            font-size: 1.8em;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
         .info, .activities {
             margin-top: 20px;
+            background-color: #f0f4c3;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
         }
+
+        .info:hover, .activities:hover {
+            background-color: #e6ee9c;
+        }
+
         .info p, .activities p {
             margin: 5px 0;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
+
+        .info p strong, .activities h2 {
+            color: #00796b;
+        }
+
+        .activities ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .activities ul li {
+            background-color: #b2dfdb;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .activities ul li:hover {
+            background-color: #80cbc4;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="header">
-        <img src="https://steduexneusis01.blob.core.windows.net/publico/colegio_742/logo.jpg?_t=638637954357322099" alt="Logo">
+        <img src="https://steduexneusis01.blob.core.windows.net/publico/colegio_742/logo.jpg?_t=638637954357322099" alt="Logo Colegio">
         <h1>Colegio Los Olivos</h1>
     </div>
-<img height="100px" src="https://img.freepik.com/free-vector/open-blue-umbrella-isolated_1308-78675.jpg?t=st=1728198811~exp=1728202411~hmac=5d7907cf4c3455b156df925a2ba70129178301f7de1520a0ebb5e9ca4cbdd302&w=740" height=10px alt="Logo">
+    
+    <img src="https://img.freepik.com/free-vector/open-blue-umbrella-isolated_1308-78675.jpg?t=st=1728198811~exp=1728202411~hmac=5d7907cf4c3455b156df925a2ba70129178301f7de1520a0ebb5e9ca4cbdd302&w=740" height="100px" alt="Logo Paraguas">
+    
     <div class="info">
         <p><strong>Alumno/a:</strong> Alejandro Soares Márquez</p>
         <p><strong>Clase:</strong> 1º D</p>
         <p><strong>Seño:</strong> Vero</p>
     </div>
+
     <div class="activities">
         <h2>Actividades Extraescolares</h2>
         <p><strong>Lunes, Martes y Jueves:</strong></p>
@@ -60,6 +124,10 @@
             <li>Comedor</li>
             <li>Cuentacuentos</li>
         </ul>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Colegio Los Olivos</p>
     </div>
 </div>
 

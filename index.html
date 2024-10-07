@@ -11,7 +11,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 125vh;
+            height: 130vh;
             margin: 0;
             animation: fadeIn 1.5s ease;
         }
@@ -23,7 +23,7 @@
 
         .container {
             background-color: #ffffff;
-            padding: 50px 30px 30px; /* Más espacio en la parte superior */
+            padding: 50px 30px 30px;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             width: 350px;
@@ -38,7 +38,7 @@
         }
 
         .header img {
-            width: 80px; /* Aumenta el tamaño del logo */
+            width: 80px;
             height: 80px;
             margin-bottom: 10px;
         }
@@ -59,7 +59,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .info, .activities {
+        .info, .activities, .emergency {
             margin-top: 20px;
             background-color: #f0f4c3;
             padding: 15px;
@@ -67,16 +67,16 @@
             transition: background-color 0.3s ease;
         }
 
-        .info:hover, .activities:hover {
+        .info:hover, .activities:hover, .emergency:hover {
             background-color: #e6ee9c;
         }
 
-        .info p, .activities p {
+        .info p, .activities p, .emergency p {
             margin: 5px 0;
             font-size: 1.1em;
         }
 
-        .info p strong, .activities h2 {
+        .info p strong, .activities h2, .emergency h2 {
             color: #00796b;
         }
 
@@ -109,7 +109,6 @@
 
 <div class="container">
     <div class="header">
-        <!-- Logo del colegio (asegúrate de que la URL de la imagen esté disponible o usa una imagen local) -->
         <img src="https://steduexneusis01.blob.core.windows.net/publico/colegio_742/logo.jpg?_t=638637954357322099" alt="Logo Colegio">
         <h1>Colegio Los Olivos</h1>
     </div>
@@ -117,7 +116,6 @@
     <img src="https://img.freepik.com/free-vector/open-blue-umbrella-isolated_1308-78675.jpg?t=st=1728198811~exp=1728202411~hmac=5d7907cf4c3455b156df925a2ba70129178301f7de1520a0ebb5e9ca4cbdd302&w=740" height="100px" alt="Logo Paraguas">
     
     <div class="info">
-        <!-- Avatar del estudiante -->
         <img src="20240808_135500.jpg" alt="Avatar del Alumno" class="avatar">
         <p><strong>Alumno/a:</strong> Alejandro Soares Márquez</p>
         <p><strong>Clase:</strong> 1º D</p>
@@ -137,6 +135,14 @@
             <li>Comedor</li>
             <li>Cuentacuentos</li>
         </ul>
+    </div>
+
+    <!-- Sección de contacto de emergencia -->
+    <div class="emergency">
+        <h2>Contacto de Emergencia</h2>
+        <p><strong>Nombre:</strong> Joaquim Soares</p>
+        <p><strong>Relación:</strong> Padre</p>
+        <p><strong>Teléfono:</strong> +34 600 032 256</p>
     </div>
 
     <div class="footer">

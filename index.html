@@ -103,6 +103,18 @@
             color: #555;
         }
 
+        /* Estilos para el dropdown */
+        .dropdown-content {
+            display: none;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .dropdown h2 {
+            cursor: pointer;
+            display: inline-block;
+        }
+
     </style>
 </head>
 <body>
@@ -137,18 +149,27 @@
         </ul>
     </div>
 
-    <!-- Sección de contacto de emergencia -->
-    <div class="emergency">
-        <h2>Contacto de Emergencia</h2>
-        <p><strong>Nombre:</strong> Joaquim Soares</p>
-        <p><strong>Relación:</strong> Padre</p>
-        <p><strong>Teléfono:</strong> +34 600 032 256</p>
+    <!-- Sección de contacto de emergencia en dropdown -->
+    <div class="emergency dropdown">
+        <h2 onclick="toggleDropdown()">Contacto de Emergencia</h2>
+        <div class="dropdown-content">
+            <p><strong>Nombre:</strong> Joaquim Soares</p>
+            <p><strong>Relación:</strong> Padre</p>
+            <p><strong>Teléfono:</strong> +34 600 032 256</p>
+        </div>
     </div>
 
     <div class="footer">
         <p>&copy; 2024 Colegio Los Olivos</p>
     </div>
 </div>
+
+<script>
+    function toggleDropdown() {
+        const content = document.querySelector('.dropdown-content');
+        content.style.display = content.style.display === 'none' || content.style.display === '' ? 'block' : 'none';
+    }
+</script>
 
 </body>
 </html>
